@@ -7,26 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Client Requirements
-Created based on the following requirements:-
-Write a migration to create lowest_fares table
-    from_airport 
-    to_airport 
-    lowest_fare 
-
-Write a Laravel task that gets executed every hour & updates latest lowest airfares for the current date between below routes, in the database table 
-    BOM - NYC
-    BOM - SFO
-    SFO - BOM
-    NYC - BOM
-
-Use this API to fetch lowest fares : https://developers.amadeus.com/self-service/category/203/api-doc/4/api-docs-and-example/10002
-
 ## About this app
 
 1) I've used GuzzleClient for making HTTP requests to third party api to fetch the lowest rates.
 2) The task scheduler code has been written to hourly perform the update operation.
 3) The migration also has been written and can be found in the file named: *2019_03_21_122024_lowest_fares_table.php*.
+4) Apis were referenced from https://developers.amadeus.com/self-service/category/203/api-doc/4/api-docs-and-example/10002.
 
 ## About Laravel
 
