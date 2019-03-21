@@ -7,6 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Requirements and getting started
+Make sure you have php, mysql, composer installed on your system.
+First create a blank database update your .env file values accordingly.
+
+Then run the following commands:
+1) `composer require` 
+2) `php artisan migrate`
+3) `php artisan serve`
+
 ## About this app
 
 1) I've used GuzzleClient for making HTTP requests to third party api to fetch the lowest rates.
