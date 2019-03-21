@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->call(function (LowestRateService $customService) {
             $customService->main();
-        })->everyMinute()->runInBackground();
+        })->hourly();
     }
 
     /**
